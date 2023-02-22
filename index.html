@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <section class="flex">
+            <a href="#home" class="logo"><img src="images/logo.svg" alt=""></a>
+            <nav class="navbar">
+                <a href="#home">Accueil</a>
+                <a href="formule.html">Formule</a>
+                <a href="apropos.html ">À propos</a>
+                <a href="blog.html ">Blog</a>
+            </nav>
+
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </section>
+    </header>
+
+    <section class="about" id="about">
+        <div class="image">
+            <img src="images/about.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>IIM Form</h3>
+            <p>(c'est un site de poulet en vré)</p>
+            <a href="#menu" class="btn">Menu</a>
+        </div>
+    </section>
+
+    
+
+    
+
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h3>Formulaire d'inscription</h3>
+        </div>
+        <div class="row">
+            <div class="image">
+                <img src="images/contact-img" alt="">
+            </div>
+            <form action="" method="post">
+                <h3>Inscription</h3>
+                <input type="text" name="name" required class="box" maxlength="20" placeholder="Nom">
+                <input type="text" name="prenom" required class="box" maxlength="20" placeholder="Prénom">
+                <input type="email" name="email" required class="box" maxlength="30" placeholder="Email">
+                <input type="password" name="password" required class=" box " maxlength="20 " placeholder="Mot de passe">
+                <input type="submit" name="send" value="S'inscrire" class="btn">
+            </form>
+        </div>
+    </section>
+
+    <section class="footer ">
+        <div class="box-container ">
+            <div class="box ">
+                <i class="fas fa-envelope "></i>
+                <h3>Email</h3>
+                <p>ChickenDelivery@gmail.com</p>
+            </div>
+            <div class="box ">
+                <i class="fas fa-clock "></i>
+                <h3>Horaire</h3>
+                <p>11:30 à 00:00</p>
+
+            </div>
+            <div class="box ">
+                <i class="fas fa-map-marked-alt "></i>
+                <h3>Livraison</h3>
+                <p>Paris et ses banlieues</p>
+
+            </div>
+            <div class="box ">
+                <i class="fas fa-phone "></i>
+                <h3>Nous Contacter</h3>
+                <p>+123-456-7890</p>
+            </div>
+        </div>
+        <div class="credit ">&copy; Copyright @2022 By <span>Chicken Delivery</span> | All Rights Reserved</div>
+    </section>
+    <script>
+        fetch('/api', {
+                method: 'POST'
+            });
+    </script>
+    <script src=" script.js "></script></body>
+
+</html>
